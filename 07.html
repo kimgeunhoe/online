@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 폼 - 웹 접근성 준수</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            <ol>
+                <li>
+                    <label for="userId">아이디</label>
+                    <input type="text" id="userId">
+                </li>
+                <li>
+                    <label for="userPw">비밀번호</label>
+                    <input type="password" id="userPW">
+                </li>
+                <li>
+                    <input type="submit" value="로그인">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>검색</legend>
+            <ol>
+                <li>
+                    <label for="srch">자료검색</label>
+                    <input type="search" id="srch">
+                    <input type="image" src="img/btn.jpg" alt="검색">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>회원가입양식</legend>
+            <ol>
+                <li>
+                    <label for="phone">전화번호</label>
+                    <input type="tel" id="phone">
+                </li>
+                <li>
+                    <label for="emailAddr">이메일</label>
+                    <input type="email" id="emailAddr"> @
+                    <select title="이메일 도메인 선택">
+                        <option value=""  disabled selected>직접선택</option>
+                        <option value="">naver.com</option>
+                        <option value="">gmail.com</option>
+                        <option value="">daum.com</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="radio" id="sms" name="receive">
+                    <label for="sms">SMS 문자 수신</label>
+                    <input type="radio" id="email" name="receive">
+                    <label for="email">이메일 수신</label>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+</body>
+</html>
