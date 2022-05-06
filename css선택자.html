@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+        p { /* type선택자, element요소 선택자: 우선순위 1점 */
+            color: red;
+        }
+        .green { /* class선택자 : 우선순위 10점 */
+            color: green;
+        }
+        #blue { /* id선택자 : 우선순위 100점 */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>css 선택자</h1>
+    <p class="green">css는 내부스타일, 외부스타일, 인라인스타일이 있다.</p>
+    <p id="blue">선택자에는 스타일을 적용할 대상을 지정하고, 속성과 값을 넣고 ;으로 마무리한다.</p>
+    <p style="color: yellow;">css선택자는 전체선택자, 클래스선택자, 아이디선택자가 있다.</p>
+    <!-- 인라인스타일 : 우선순위 1000점 -->
+</body>
+</html>
