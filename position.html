@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        #wrap {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: gray;
+        }
+        div {
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .relative {
+            background-color: red;
+            position: relative; /* 상대위치, 자기자신을 기준으로 이동 레이어 개념, 주변에 영향을 주지 않음*/
+            left: 100px;
+            top: 50px;
+        }
+        .fixed {
+            background-color: green;
+            position: fixed; /* 고정위치, 스크린을 기준으로 고정, 레이어 개념, 주변에 영향을 줌 */
+            right: 0;
+            bottom: 0;
+            z-index: 20;
+        }
+        .absolute {
+            background-color: blue;
+            position: absolute; /* 절대위치, 부모를 기준으로 이동 */
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="relative">position:relative</div>
+        <div class="fixed">position:fixed</div>
+        <div class="absolute">position:absolute</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie dui id felis molestie, ac congue massa
+            vulputate. Phasellus ac purus sed mauris volutpat dignissim. Suspendisse in efficitur leo, semper hendrerit
+            augue.</p>
+    </div>
+</body>
+
+</html>
