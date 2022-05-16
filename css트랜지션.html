@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: all 1s ease 0s;
+        }
+        /* transition-property: 모든 속성all, width, heigth, trasform, background, color */
+        /* transition-duration: 시작해서 끝날 때까지 시간, 초단위 지정 */
+        /* transition-timingfunction: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier */
+        /* transition-delay: 시간만큼 대기했다가 작동 */
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+            transform: rotate(360deg);
+        }
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 1s ease-in 0s;
+        }
+        .red:hover {
+            width: 500x;
+        }
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: height 1s ease-out 0s;
+        }
+        .green:hover {
+            height: 500px;
+        }
+        .blue {
+            position: relative;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: left 1s ease-in-out 0s;
+        }
+        .blue:hover {
+            left: 500px;
+        }
+        .aqua {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: opacity 1s cubic-bezier(0.375, -0,600, 0.295, 1.610) 0s;
+        }
+        .aqua:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="aqua"></div>
+</body>
+</html>
