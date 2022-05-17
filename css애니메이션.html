@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(img/ruler.jpg) no-repeat;
+        }
+        div {
+            position: relative;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid red;
+            background-color: yellow;
+            animation: ani 10s linear 0s infinite alternate;
+        }
+        @keyframes ani {
+            0%{left: 0; border: 10px solid red; background-color: yellow;}
+            50%{top: 50px;}
+            100%{left: 1000px; border: 10px solid blue; background-color: aqua;}
+        }
+        /* animation-name: 모션이름
+        animation-duration: 애니메이션 총 시간
+        animation-timing-function: 가속도, linear, ease, deas-in, ease-out
+        animation-delay: 대기시간
+        animation-ineration: 반복횟수, infinite무한반복
+        animation-direction:방향, alternate역방향 */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
