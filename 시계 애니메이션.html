@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계 애니메이션</title>
+    <style>
+        .clock {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            margin: 100px 300px;
+            border: 1px solid ;
+        }
+        div.h {
+            position: absolute;
+            left: 50%;
+            top: 200px;
+            width: 10px;
+            height: 50px;
+            background-color: red;
+            animation: ani 43200s linear 0s infinite normal;
+        }
+        div.m {
+            position: absolute;
+            left: 50%;
+            top: 100px;
+            width: 10px;
+            height: 150px;
+            background-color: green;
+            animation: ani 3600s linear 0s infinite normal;
+        }
+        div.s {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 10px;
+            height: 250px;
+            background-color: blue;
+            animation: ani 60s linear 0s infinite normal;
+        }
+        @keyframes ani {
+            0%{transform: rotate(0); transform-origin: center bottom;}
+            100%{ transform: rotate(360deg); transform-origin: center bottom;}
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="h"></div>
+        <div class="m"></div>
+        <div class="s"></div>
+    </div>
+</body>
+</html>
